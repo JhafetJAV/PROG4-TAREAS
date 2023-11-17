@@ -60,7 +60,7 @@ while True:
             conn.execute("DELETE FROM DISTRIBUIDORES WHERE ID = " + str(por_eliminar) )
             conn.commit()
          elif opcion == 4:
-            print("Regresando al menú principal🤷")
+            print("Regresando al menú principal")
             break
          else:
             print("ERR::Opcion no valida")
@@ -97,7 +97,7 @@ while True:
             conn.execute("INSERT INTO DISTRIBUIDORES(ID, NOMBRE, UBICACION, CLASIFICACION) VALUES("+id+", \""+nombre+"\", \""+ubicacion+"\", \""+clasificacion+"\")")
             conn.commit()
          elif opcion == 4:
-            print("Regresando al menú principal🤷")
+            print("Regresando al menú principal")
             break
          else:
             print("ERR::Opcion no valida")
@@ -127,7 +127,7 @@ while True:
             for row in cursor:
                 print(str(row[0]))
          elif opcion == 4:
-            print("Regresando al menú principal🤷")
+            print("Regresando al menú principal")
             break
          else:
             print("ERR::Opcion no valida")
@@ -167,7 +167,7 @@ while True:
             conn.execute('UPDATE DISTRIBUIDORES SET NOMBRE = "' + nuevo_nombre + '" WHERE ID = ' + por_actualizar)
             conn.commit()
          elif opcion == 4:
-            print("Regresando al menú principal🤷")
+            print("Regresando al menú principal")
             break
          else:
             print("ERR::Opcion no valida")
